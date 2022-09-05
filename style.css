@@ -565,6 +565,10 @@ button {
   border: 2px solid #e7a136;
 }
 
+body{
+  background-color: #fceddf;
+}
+
 /*................................................
     4. SKELETON
 .................................................*/
@@ -576,13 +580,19 @@ button {
   justify-content: space-between;
 } */
 
-#header {
+.header {
   padding-top: 20px;
+  background-color: #fceddf;
   width: 1200px;
   margin: 0 auto;
-  background-color: #fceddf;
 }
 
+/* .outer-container-header {
+  padding-top: 20px;
+  width: 1200px;
+  background-color: #fceddf;
+  margin: 0 auto;
+} */
 .menu li a {
   color: var(--primary-color);
   padding: 10px;
@@ -797,11 +807,11 @@ button {
 
 .our-team-blue-box {
   background-color: #011c34;
-  margin-top: 10px;
   height: 90px;
-  width: 260px;
-  margin-left: 20px;
-  margin-top: -35px;
+  width: 276px;
+  margin-top: -40px;
+  margin-right: 10px;
+  margin-left: 12px;
 }
 
 .our-team-image {
