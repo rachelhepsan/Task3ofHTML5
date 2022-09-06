@@ -545,7 +545,7 @@ button {
     3. COMMON CSS CLASSES
 .................................................*/
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -565,7 +565,7 @@ button {
   border: 2px solid #e7a136;
 }
 
-body{
+body {
   background-color: #fceddf;
 }
 
@@ -576,23 +576,14 @@ body{
 /*................................................
     5. HEADER SECTION
 .................................................*/
-/* #header .flex-box {
-  justify-content: space-between;
-} */
 
 .header {
   padding-top: 20px;
   background-color: #fceddf;
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
-/* .outer-container-header {
-  padding-top: 20px;
-  width: 1200px;
-  background-color: #fceddf;
-  margin: 0 auto;
-} */
 .menu li a {
   color: var(--primary-color);
   padding: 10px;
@@ -620,13 +611,17 @@ body{
   opacity: 0;
 }
 
+.mobile-hidden {
+  display: none;
+}
+
 /*................................................
     6. BODY SECTION
 .................................................*/
 .banner {
   padding-top: 80px;
   background-color: #fceddf;
-  ;
+  width: 100%;
 }
 
 .banner h1 {
@@ -653,7 +648,7 @@ body{
 }
 
 .banner-left {
-  width: 600px;
+  width: 50%;
 }
 
 .reviews {
@@ -668,6 +663,7 @@ body{
 .banner-bottom p {
   font-size: 35px;
   font-weight: 700;
+  color: #2c2d2a;
 }
 
 #yellow {
@@ -681,6 +677,7 @@ body{
   text-align: center;
   padding-top: 80px;
   padding-bottom: 50px;
+  color: #2c2d2a;
 }
 
 .service-box {
@@ -716,6 +713,7 @@ body{
 .service {
   background-color: #fae7c7;
   padding-bottom: 80px;
+  width: 100%;
 }
 
 .head-3 {
@@ -723,12 +721,14 @@ body{
   font-weight: 900;
   text-align: left;
   padding-bottom: 30px;
+  color: #2c2d2a;
 }
 
 .about {
   background-color: #fceddf;
   padding-top: 40px;
   padding-bottom: 40px;
+  width: 100%;
 }
 
 .about-box {
@@ -744,13 +744,19 @@ body{
   margin-bottom: 25px;
 }
 
+.list li {
+  position: relative;
+  margin-left: 25px;
+}
+
 .list ul li::before {
   content: "\2022";
   color: #e7a136;
-  font-size: 30px;
+  font-size: 50px;
   display: inline-block;
   width: 30px;
-  margin-left: 15px;
+  margin-left: -25px;
+  position: absolute;
 }
 
 .section-image {
@@ -761,6 +767,7 @@ body{
 .how-it-works {
   background-color: #fae7c7;
   padding-bottom: 40px;
+  width: 100%;
 }
 
 .how-box {
@@ -789,7 +796,6 @@ body{
   background-color: #e7a136;
   padding: 15px 50px;
   box-shadow: 5px 5px;
-  margin-left: 42%;
 }
 
 .our-team-body {
@@ -799,6 +805,8 @@ body{
 .our-team {
   background-color: #fceddf;
   padding-bottom: 50px;
+  width: 100%;
+  text-align: center;
 }
 
 .our-team-body-box {
@@ -864,10 +872,11 @@ body{
   height: 60px;
 }
 
-
 .what-they-saying {
   background-color: #fae7c7;
   padding-bottom: 50px;
+  width: 100%;
+  text-align: center;
 }
 
 .para-what {
@@ -886,6 +895,7 @@ body{
   background-color: #011c34;
   padding-top: 20px;
   padding-bottom: 20px;
+  width: 100%;
 }
 
 .call-mail {
@@ -914,3 +924,119 @@ body{
 /*................................................
     8. MEDIA QUERIES
 .................................................*/
+
+@media only screen and (max-width: 767px) {
+
+  .menu,
+  .btn {
+    display: none;
+  }
+
+  .header {
+    border-bottom: 1px solid #00000030;
+  }
+
+  .mob-view {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .mob-view-rev {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .banner {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  .banner-left {
+    text-align: center;
+  }
+
+  .service-box {
+    box-shadow: none;
+  }
+
+  .section-image {
+    box-shadow: none;
+  }
+
+  .how-box {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .mobile-hidden {
+    display: block;
+    padding-right: 1%;
+  }
+
+  .logo {
+    padding-left: 1%;
+  }
+
+  .banner h1{
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  .banner-left {
+    width: 100%;
+  }
+
+  .banner-bottom {
+    height: 300px;
+  }
+
+  .head-1 {
+    font-size: 35px;
+  }
+
+  .service-box-container {
+    height: 800px;
+  }
+
+  .head-2 {
+    font-size: 24px;
+    width: 40%;
+  }
+
+  .mob-width {
+    width: 90%;
+  }
+
+  .head-1, .head-3 {
+    font-size: 30px;
+  }
+
+  .our-team-blue-box {
+    width: 93%;
+  }
+
+  .our-team-body {
+    height: 1400px;
+    padding-left: 10%;
+  }
+
+  .our-team-heading {
+    width:80%;
+  }
+
+  .para-what-box {
+    text-align: left;
+  }
+
+  .what-they-saying-box {
+    height: 700px;
+  }
+
+  .footer-box {
+    align-items: flex-start;
+    padding-left: 10%;
+    height: 500px;
+  }
+
+}
