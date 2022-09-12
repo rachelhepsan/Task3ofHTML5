@@ -583,12 +583,7 @@ body {
   background-color: #fceddf;
   max-width: 1200px;
   margin: 0 auto;
-}
-
-.header-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  width: 95%;
+  width: 80%;
 }
 
 .menu li a {
@@ -638,6 +633,7 @@ body {
   color: #2c2d2a;
   line-height: 90px;
   padding-bottom: 20px;
+  padding-right: 20px;
 }
 
 .para {
@@ -656,7 +652,11 @@ body {
 }
 
 .banner-left {
-  width: 100%;
+  width: 100%
+}
+
+.banner-image {
+  width: 400px;
 }
 
 .reviews {
@@ -692,7 +692,7 @@ body {
   background-color: #011c34;
   width: 30%;
   height: 230px;
-  box-shadow: 14px -14px 0 0 #e7a136, 14px -14px 0 2px black;
+  box-shadow: 14px -14px 0 0 #e7a136, 14px -14px 0 2px #011c34;
 }
 
 .arrow {
