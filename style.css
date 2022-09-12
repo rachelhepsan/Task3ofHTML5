@@ -547,6 +547,7 @@ button {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  width: 80%;
 }
 
 .flex-box {
@@ -582,6 +583,12 @@ body {
   background-color: #fceddf;
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 95%;
 }
 
 .menu li a {
@@ -622,6 +629,7 @@ body {
   padding-top: 80px;
   background-color: #fceddf;
   width: 100%;
+  padding-bottom: 40px;
 }
 
 .banner h1 {
@@ -648,7 +656,7 @@ body {
 }
 
 .banner-left {
-  width: 50%;
+  width: 100%;
 }
 
 .reviews {
@@ -682,7 +690,7 @@ body {
 
 .service-box {
   background-color: #011c34;
-  width: 350px;
+  width: 30%;
   height: 230px;
   box-shadow: 14px -14px 0 0 #e7a136, 14px -14px 0 2px black;
 }
@@ -692,6 +700,7 @@ body {
   height: 95px;
   padding-top: 50px;
   padding-right: 30px;
+  margin-top: 20px;
   transform: rotate(45deg);
 }
 
@@ -732,16 +741,16 @@ body {
 }
 
 .about-box {
-  padding-left: 30px;
   padding-top: 30px;
   width: 45%;
 }
 
 .list {
   width: 450px;
-  /* text-align: center; */
   list-style: none;
   margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .list li {
@@ -762,6 +771,7 @@ body {
 .section-image {
   box-shadow: 15px -15px 0 0 #011c34, 15px -15px 0 3px #e7a136;
   margin-top: 30px;
+  width: 50%;
 }
 
 .how-it-works {
@@ -772,7 +782,6 @@ body {
 
 .how-box {
   padding-top: 180px;
-  padding-left: 30px;
   padding-right: 30px;
   width: 50%;
 }
@@ -788,6 +797,7 @@ body {
 .our-team-heading {
   width: 500px;
   margin: 0 auto;
+  padding-bottom: 20px;
 }
 
 .see-all-team {
@@ -816,8 +826,8 @@ body {
 .our-team-blue-box {
   background-color: #011c34;
   height: 90px;
-  max-width: 276px;
-  width: 100%;
+  /* max-width: 276px;
+  width: 100%; */
   margin-top: -40px;
   margin-right: 10px;
   margin-left: 12px;
@@ -832,7 +842,7 @@ body {
 .para-blue-box {
   text-align: center;
   padding: 25px;
-  font-size: 16px;
+  font-size: 15px;
   color: #fff;
   line-height: 20px;
 }
@@ -851,6 +861,7 @@ body {
 .para-what-box {
   padding-left: 20px;
   text-align: left;
+  line-height: 25px;
 }
 
 .what-image-box span {
@@ -934,6 +945,10 @@ body {
     display: none;
   }
 
+  .container{
+    width: 90%;
+  }
+
   .header {
     border-bottom: 2px solid #00000030;
     box-shadow: 0 0 5px 2px #00000030;
@@ -960,10 +975,6 @@ body {
   }
 
   .service-box {
-    box-shadow: none;
-  }
-
-  .section-image {
     box-shadow: none;
   }
 
@@ -1008,19 +1019,11 @@ body {
   }
 
   .mob-width {
-    width: 90%;
+    width: 95%;
   }
 
   .head-1, .head-3 {
     font-size: 30px;
-  }
-
-  .our-team-blue-box {
-    width: 80%;
-  }
-
-  .our-team-image {
-    width: 100%;
   }
 
   .our-team-heading {
@@ -1033,8 +1036,10 @@ body {
     padding-bottom: 50px;
   }
 
-  .what-they-saying-box {
-    height: 700px;
+  .para-what-box {
+    padding: 0px;
+    font-size: 15px;
+    line-height: 20px;
   }
 
   .footer-box {
@@ -1050,6 +1055,10 @@ body {
   .menu,
   .btn {
     display: none;
+  }
+
+  .container {
+    width: 90%;
   }
 
   .header {
@@ -1083,7 +1092,7 @@ body {
 
   .section-image {
     box-shadow: none;
-    width: 80%;
+    width: 100%;
   }
 
   .how-box {
@@ -1113,6 +1122,14 @@ body {
     height: 300px;
   }
 
+  .para-what-box {
+    padding-top: 15px;
+  }
+
+  .what-box {
+    height: 150px;
+  }
+
   .head-1 {
     font-size: 35px;
   }
@@ -1127,7 +1144,7 @@ body {
   }
 
   .tab-width {
-    width: 90%;
+    width: 95%;
   }
 
   .head-1, .head-3 {
@@ -1141,14 +1158,6 @@ body {
     padding-bottom: 25px;
   }
 
-  /* .our-team-body-box {
-    position: relative;
-  }
-
-  .our-team-blue-box {
-    position:absolute;
-  } */
-
   .our-team-heading {
     width:80%;
   }
@@ -1158,7 +1167,8 @@ body {
   }
 
   .para-what-box {
-    padding-top: 30px;
+    padding-top: 10px;
+    font-size: 15px;
   }
 
   .footer-box {
