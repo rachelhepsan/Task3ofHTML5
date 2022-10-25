@@ -11,9 +11,9 @@
 
 <body>
     <header class="header">
-        <div class="header-container flex-box">
+        <div class="container flex-box">
             <h1 class="logo">
-                <img src="./images/logo.png" alt="logo">
+                <a href=""><img src="./images/logo.png" alt="logo"></a>
             </h1>
             <nav class="menu">
                 <ul class="flex-box">
@@ -30,22 +30,66 @@
                 </ul>
             </nav>
             <a class="btn btn-secondary" href="">Free Trial</a>
-            <img src="./images/menu-icon.svg" alt="Menu" class="mobile-hidden">
+            <a href="javascript:void(0)" class="openbtn" onclick="openNav()">
+                <img src="./images/menu-icon.svg" alt="Menu">
+            </a>
+            <div class="side-menu" id="sidebar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <!-- <a class="dropdown mainMenu">Home
+                    <span class="dropdown-arrow">&#8964;</span>
+                </a>
+                        <div class="sub-menu">
+                            <a href="" class="aTag">Overview</a>
+                            <a href="" class="aTag">Service We Offer</a>
+                            <a href="" class="aTag">About Us</a>
+                            <a href="" class="aTag">How it works</a>
+                            <a href="" class="aTag">Our Team</a>
+                            <a href="" class="aTag">What They Saying</a>
+                        </div>
+                <a class="dropdown mainMenu">About
+                    <span class="dropdown-arrow">&#8964;</span>
+                </a>
+                        <div class="sub-menu">
+                            <a href="" class="aTag">About Olyxio</a>
+                            <a href="" class="aTag">Leadership Team</a>
+                            <a href="" class="aTag">Clients</a>
+                            <a href="" class="aTag">Partners</a>
+                            <a href="" class="aTag">Corporate Responsibility</a>
+                            <a href="" class="aTag">News</a>
+                            <a href="" class="aTag">Privacy Policy</a>
+                            <a href="" class="aTag">Pay Your Invoice</a>
+                        </div>
+                <a class="dropdown mainMenu">Service
+                    <span class="dropdown-arrow">&#8964;</span>
+                </a>
+                        <div class="sub-menu">
+                            <a href="" class="aTag">Overview</a>
+                            <a href="" class="aTag">Architecture</a>
+                            <a href="" class="aTag">Design</a>
+                            <a href="" class="aTag">Development</a>
+                            <a href="" class="aTag">Testing</a>
+                            <a href="" class="aTag">Tools & Labs</a>
+                            <a href="" class="aTag">Delivery Model</a>
+                        </div>
+                    <a href="https://www.qburst.com/company/contact/" class="mainMenu">Our Locations</a>
+                    <a href="" class="mainMenu">Contact</a>
+                    <a href=""class="mainMenu">FAQ</a> -->
+            </div>
         </div>
     </header>
     <section class="banner">
         <div class="container flex-box mob-view-rev">
             <div class="banner-left">
                 <h1>Grow Professionally with the best</h1>
-                    <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Porro voluptatem pariatur animi reiciendis provident fuga harum,
-                        fugiat quidem in expedita minima.</p>
-                    <a href="somesource.com" class="learn-more">Learn More</a>
-                    <div class="banner-bottom flex-box mob-view">
-                        <p>10k <br><span class="reviews">Reviews</span> </p>
-                        <p> <span id="yellow">08+</span> <br><span class="reviews">Year of Experience</span> </p>
-                        <p>300+ <br> <span class="reviews">Project Completed</span> </p>
-                    </div>
+                <p class="para">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Porro voluptatem pariatur animi reiciendis provident fuga harum,
+                    fugiat quidem in expedita minima.</p>
+                <a href="somesource.com" class="learn-more">Learn More</a>
+                <div class="banner-bottom flex-box mob-view">
+                    <p>10k <br><span class="reviews">Reviews</span> </p>
+                    <p> <span id="yellow">08+</span> <br><span class="reviews">Year of Experience</span> </p>
+                    <p>300+ <br> <span class="reviews">Project Completed</span> </p>
+                </div>
             </div>
             <img src="./images/banner.png" alt="Banner" class="banner-image mob-width">
         </div>
@@ -151,8 +195,8 @@
     <section class="what-they-saying">
         <div class="container">
             <p class="head-1">What They Saying</p>
-            <div class="what-they-saying-box flex-box mob-view">
-                <div class="what-box mob-width tab-width">
+            <div class="what-they-saying-box flex-box mob-view" id="testimonial">
+                <!-- <div class="what-box mob-width tab-width">
                     <div class="what-image-box flex-box">
                         <img src="./images/jack.jpg" alt="Jack" class="what-image">
                         <div>
@@ -181,12 +225,12 @@
                     </div>
                     <p class="para-what-box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias aut. debitis nisi nostrum.
                     </p>
-                </div>
+                </div> -->
             </div>
             <a href="somesource.com" class="see-all-team">See All Team</a>
         </div>
     </section>
-    <footer class="footer">
+    <footer class="footer basicFooter">
         <div class="container flex-box mob-view footer-box">
             <div class="footer-logo">
                 <img src="./images/footer-logo.png" alt="Logo">
@@ -219,6 +263,7 @@
             </div>
         </div>
     </footer>
+    <script src="app.js"></script>
 </body>
 
 </html>

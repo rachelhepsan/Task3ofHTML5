@@ -1,0 +1,109 @@
+[
+    {
+        "mainMenu":"Home",
+        "subMenu": [
+            {
+                "name":"Overview",
+                "link":"index.html"
+            },
+            {
+                "name":"Service We Offer",
+                "link":"index.html"
+            },
+            {
+                "name":"About Us",
+                "link":"index.html"
+            },
+            {
+                "name":"How it Works",
+                "link":"index.html"
+            },
+            {
+                "name":"Our Team",
+                "link":"index.html"
+            },
+            {
+                "name":"What They Saying",
+                "link":"index.html"
+            }
+        ]
+    },
+    {
+        "mainMenu":"Company",
+        "subMenu":[
+            {
+                "name":"About Olyxio",
+                "link":"https://www.google.co.in/"
+            },
+            {
+                "name":"Leadership Team",
+                "link":"https://www.google.co.in/"
+            },
+            {
+                "name":"Clients",
+                "link":"https://www.google.co.in/"
+            },
+            {
+                "name":"Partners",
+                "link":"https://www.google.co.in/"
+            },
+            {
+                "name":"Corporate Responsibility",
+                "link":"https://www.google.co.in/"
+            },
+            {
+                "name":"News",
+                "link":"https://www.google.co.in/"
+            },
+            {
+                "name":"Privacy Policy",
+                "link":"https://www.google.co.in/"
+            },
+            {
+                "name":"Pay Your Invoice",
+                "link":"https://www.google.co.in/"
+            }
+        ]
+    },
+    {
+        "mainMenu":"Approach",
+        "subMenu":[
+            {
+                "name":"Overview",
+                "link":"https://www.google.co.in/"
+            },
+            {
+                "name":"Architecture",
+                "link":"https://www.google.co.in/"
+            },
+            {
+                "name":"Design",
+                "link":"https://www.google.co.in/"
+            },
+            {
+                "name":"Development",
+                "link":"https://www.google.co.in/"
+            },
+            {
+                "name":"Testing",
+                "link":"https://www.google.co.in/"
+            },
+            {
+                "name":"Tools & Lab",
+                "link":"https://www.google.co.in/"
+            },
+            {
+                "name":"Delivery Model",
+                "link":"https://www.google.co.in/"
+            }
+        ]
+    },
+    {
+        "mainMenu":"Our Locations",
+        "link":"index1.html"
+    },
+    {
+        "mainMenu":"Blog",
+        "link":"https://www.google.co.in/"
+    }
+]

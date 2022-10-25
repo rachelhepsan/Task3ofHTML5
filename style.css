@@ -340,19 +340,19 @@ legend {
  * 3. Improve appearance and consistency in all browsers.
  */
 
-button,
+/* button,
 input,
 select,
 textarea {
   font-size: 100%;
   /* 1 */
-  margin: 0;
+  /* margin: 0; */
   /* 2 */
-  vertical-align: baseline;
+  /* vertical-align: baseline; */
   /* 3 */
-  *vertical-align: middle;
+  /* *vertical-align: middle; */
   /* 3 */
-}
+/*} */
 
 /**
  * Address Firefox 3+ setting `line-height` on `input` using `!important` in
@@ -371,10 +371,10 @@ input {
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
 
-button,
+/* button,
 select {
   text-transform: none;
-}
+} */
 
 /**
  * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
@@ -518,14 +518,14 @@ textarea {
   padding: 0.2em 0;
 }
 
-button {
+/* button {
   text-transform: uppercase;
   color: #000;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 33px;
   padding-right: 33px;
-}
+} */
 
 :root {
   --primary-color: #2c2d2a;
@@ -535,6 +535,10 @@ button {
 @font-face {
   font-family: "Lexend Deca";
   src: url(./fonts/lexend-deca-v16-latin-600.ttf);
+}
+@font-face {
+  font-family: "Lexend Deca";
+  src: url(./fonts/lexend-deca-v16-latin-900.ttf);
 }
 
 /*................................................
@@ -555,10 +559,15 @@ button {
   justify-content: space-between;
 }
 
+.flex {
+  display: flex;
+}
+
 .btn {
   font-size: 18px;
   color: var(--primary-color);
   padding: 5px 10px;
+  /* display: none; */
 }
 
 .btn-secondary,
@@ -568,6 +577,7 @@ button {
 
 body {
   background-color: #fceddf;
+  color: #000;
 }
 
 /*................................................
@@ -580,11 +590,19 @@ body {
 
 .header {
   padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
   background-color: #fceddf;
-  max-width: 1200px;
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  box-shadow: 0 0 5px 1px #00000030;
 }
+/* .menu {
+  display: none;
+} */
 
 .menu li a {
   color: var(--primary-color);
@@ -617,11 +635,259 @@ body {
   display: none;
 }
 
+.side-menu  {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  width: 0;
+  top: 0;
+  right: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.dropdown {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #797979;
+  display: block;
+  border: none;
+  background: none;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  font-family: "Lexend Deca";
+}
+
+.side-menu button:hover {
+  color: #f1f1f1;
+}
+
+.side-menu a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  border: none;
+  /* font-size: 25px; */
+  color: #797979;
+  display: block;
+  transition: 0.3s;
+}
+
+.mainMenu {
+  font-size: 25px;
+}
+
+.side-menu .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  background-color: #fceddf;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #e7a136;
+}
+
+.dropdown-arrow {
+  font-size: 36px;
+}
+
+.sub-menu {
+  display: none;
+  padding-left: 10px;
+}
+
+.aTag{
+  font-size: 18px;
+}
+
+.aTag:hover {
+  color: #011c34;
+  font-family: "Lexend Deca";
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.active span{
+  transform: rotate(180deg);
+}
+
+
 /*................................................
     6. BODY SECTION
 .................................................*/
+#breadcrumb {
+  padding-top: 120px;
+  /* margin-top: 50px; */
+  display: block;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1500px;
+  /* padding-left: 100px; */
+}
+
+#breadcrumb a{
+  text-decoration: none;
+  color: #000;
+}
+
+#breadcrumb span{
+  color: #e7a136;
+}
+
+#contactHeading {
+  color: #e7a136;
+  text-align: center;
+  font-size: 45px;
+  font-weight: 1200;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.locationContainer {
+  max-width: 1200px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 95%;
+}
+
+.region {
+  margin-top: 40px;
+  width: 80%;
+}
+
+.region div{
+  width: 100%;
+}
+
+.regionHeading {
+  font-weight: 400;
+  font-size: 18px;
+  color: #000;
+  text-align: center;
+  border: 1px solid #c0c0c0;
+  width: 100%;
+  padding: 10px;
+  background-color: #f7f7f7;
+  height: 42px;
+}
+
+/* .regionHeading {
+  opacity: 1;
+  content: "";
+  border: 10px solid #000;
+  border-color: #000 transparent transparent transparent;
+  position: relative;
+  top: 50%;
+  left: 40%;
+  width: 1%;
+  display: block;
+} */
+
+/* .regionHeading {
+  background-color: #000;
+  color: #fff;
+} */
+
+/* .activeButton {
+  background-color: #fff;
+  color: #000;
+} */
+
+.activeButton{
+  background-color: #011c34;
+  color: #fff;
+  content: "";
+  border: 1px solid #011c34;
+}
+
+.activeButton::after{
+  content: "";
+    border: 10px solid #011c34;
+    border-color: #011c34 transparent transparent transparent;
+    position: relative;
+    top: 50%;
+    left: 40%;
+    width: 1%;
+    display: block;
+    opacity: 1;
+}
+
+.regionBox {
+  padding: 20px;
+  border-style: none dashed dashed none;
+  width: 50%;
+  max-height: 275px;
+  height: 100%;
+}
+
+.regionBox:nth-child(odd) {
+  border: 1px;
+  border-style: none dashed dashed none;
+  border-color: grey;
+}
+
+.regionBox:nth-child(even) {
+  border: 1px;
+  border-style: none none dashed none;
+  border-color: grey;
+}
+
+.regionBox a{
+  text-decoration: none;
+  color: #000;
+}
+
+.regionBox:hover {
+  border: 1px dashed #e7a136;
+  border-radius: 5px;
+}
+
+.america {
+  padding-top: 60px;
+  display: flex;
+  padding-bottom: 50px;
+  max-width: 1024px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.address {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.contactContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.photo {
+  text-align: center;
+  position: sticky;
+}
+
+.america img{
+  padding-left: 80px;
+  /* max-width: 40%;
+  width: 100%; */
+}
+
+
 .banner {
-  padding-top: 80px;
+  padding-top: 120px;
   background-color: #fceddf;
   width: 100%;
   padding-bottom: 40px;
@@ -835,6 +1101,7 @@ body {
   padding: 10px;
   padding-bottom: 50px;
   border: 2px solid #011c34;
+  width: 100%;
 }
 
 .para-blue-box {
@@ -874,7 +1141,6 @@ body {
 .what-box {
   background-color: white;
   width: 300px;
-  height: 200px;
   padding: 15px;
 }
 
@@ -903,7 +1169,15 @@ body {
     7. FOOTER SECTION
 .................................................*/
 
-.footer {
+.locFooter {
+  background-color: #011c34;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+  margin-top: 250px;
+}
+
+.basicFooter {
   background-color: #011c34;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -1130,10 +1404,6 @@ body {
 
   .para-what-box {
     padding-top: 15px;
-  }
-
-  .what-box {
-    height: 150px;
   }
 
   .head-1 {
